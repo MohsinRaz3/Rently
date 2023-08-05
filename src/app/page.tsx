@@ -1,8 +1,9 @@
 import { CustomFilter, SearchBar, Hero, CarCard } from '@/components'
 import { fetchCars } from '../../utils'
 import { fuels, yearsOfProduction } from '../../constants';
+import ShowMore from '@/components/ShowMore';
 
-export default async function Home({ searchParams }) {
+export default async function Home({ searchParams }: any) {
 
   const allCars = await fetchCars({
     manufacturer: searchParams.manufacturer || '',
@@ -40,6 +41,12 @@ export default async function Home({ searchParams }) {
                   <CarCard car={car} />
                 ))}
               </div>
+
+
+              <ShowMore
+                pageNumber={(searchParams.limit || 10) / 10}
+                isNext={(searchParams.limit || 10) > allCars.length} />
+
             </section>) :
 
             (
