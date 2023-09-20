@@ -20,7 +20,7 @@ const Chatbot = () => {
                 botName: "Rently",
                 avatarUrl: "https://rently.pk/assets/logo.png",
                 lazySocket: true,
-                stylesheet: "https://webchat-styler-css.botpress.app/prod/24f9e894-c0f1-44a0-9a3e-2b221c28a17c/v26070/style.css",
+                stylesheet: "https://webchat-styler-css.botpress.app/prod/0098cc7e-42ec-43ba-99bf-2526260ea915/v58407/style.css",
                 frontendVersion: "v1",
                 showPoweredBy: false
             })
